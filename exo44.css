@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    width: 100%;
+}
+
+div {
+    border: 2px dashed black;
+    width: 25rem;
+    height: 25rem;
+    animation-name: couleurs, textes;
+    animation-duration: 4s, 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+    transform: rotate(45deg);
+}
+
+@keyframes textes {
+    from {
+        color: lightgray;
+        font-weight: normal;
+    }
+
+    to {
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        z-index: -1;
+        background-color: antiquewhite;
+        transform: scale(1.25);
+    }
+
+}
+
+@keyframes couleurs {
+
+    0% {
+        background-color: antiquewhite;
+        font-size: 0.8rem;
+    }
+
+    25% {
+        background-color: aliceblue;
+        font-size: 1.5rem;
+    }
+
+    50% {
+        background-color: #00517c;
+        font-size: 0.9rem;
+    }
+
+    75% {
+        background-color: lightgray;
+        font-size: 1rem;
+    }
+
+    100% {
+        background-color: cornflowerblue;
+        font-size: 2.0rem;
+    }
+}
